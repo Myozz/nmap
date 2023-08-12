@@ -10,4 +10,4 @@
 
 ------------------------
 
-Khi UDP Scan, nmap thường gửi các request rỗng. Cho thấy rằng, với những port của các dịch vụ phổ biến, nó sẽ gửi các payload dành riêng nhằm tạo ra phản hồi, thu được kết quả chính xác hơn
+* Khi UDP Scan, nmap thường gửi các request rỗng. Cho thấy rằng, với những port của các dịch vụ phổ biến, nó sẽ gửi các payload dành riêng nhằm tạo ra phản hồi, thu được kết quả chính xác hơn
