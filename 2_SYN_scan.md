@@ -22,5 +22,5 @@ nmap -sS ...
 SYN scan sẽ được mặc định khi scan trên nmap với quyền sudo, nếu không có sudo thì mặc định sẽ là TCP Con Scan
 --------------
 
-*Còn drop khi gặp port đóng hoặc có firewlll thì tương tự TCP Con
+*Còn drop khi gặp port đóng hoặc có firewall thì tương tự TCP Con
 
