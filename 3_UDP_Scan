@@ -1,3 +1,3 @@
-nmap -sU
---------------
+# nmap -sU ...
+
 * Không như TCP, UDP là dạng không trạng thái (stateless). Thay vì chơi "bắt tay". UDP hoạt động dựa trên việc gửi gói tên
