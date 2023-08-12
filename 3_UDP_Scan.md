@@ -6,4 +6,8 @@
 
 ------------------------
 
+* Bởi vì việc khó xác dịnh một UDP port có mở hay không, UDP scan chậm vc (khoảng 20 min để scan 1000 port khi mạng ổn định). Cho nên nếu dùng để luyện tập thì nó nên được đi kèm với ```--top-ports <number>```, nó sẽ quét top ```<number>``` những port phổ biến nhất.
 
+------------------------
+
+Khi UDP Scan, nmap thường gửi các request rỗng. Cho thấy rằng, với những port của các dịch vụ phổ biến, nó sẽ gửi các payload dành riêng nhằm tạo ra phản hồi, thu được kết quả chính xác hơn
