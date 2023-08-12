@@ -10,6 +10,6 @@ nmap -sT ...
   ![image](https://github.com/Myozz/nmap/assets/94811005/15de4cd9-abb9-4be9-8529-e49102ff5238)
 
 *Nếu port mở nhưng lại được bảo vệ bởi tường lửa thì sao? Nhiều tường lửa được config để drop gói tin nhận được, tức là gửi SYN đi thì không có gì quay trở lại
-*Thâm chí có thể config tưởng lửa để response bằng RST ví dụ
+*Thâm chí có thể config tưởng lửa để response bằng RST, ví dụ:
   iptables -I INPUT -p tcp --dport <port> -j REJECT --reject-with tcp-reset
 Điều này khiến việc quét mục tiêu trở nên khó khăn hơn
