@@ -6,11 +6,15 @@ nmap -sS ...
 
 *Lợi ích
   +/ Bypass hệ thống phát hiện xâm nhậm (Intrusion Detection) CŨ
+  
   +/ SYN scan thường không bị log lại bởi litsening port
+  
   +/ Nhanh hơn TCP Connect Scan
 
 *Bất lợi:
+  
   +/ Yêu cầu sudo perm để hoạt động bởi vì nó yêu cầu quyền tạo raw packéts 
+  
   +/ Những service không ổn dịnh có thể bị sập khi SYN scan
 
 SYN scan sẽ được mặc định khi scan trên nmap với quyền sudo, nếu không có sudo thì mặc định sẽ là TCP Con Scan
