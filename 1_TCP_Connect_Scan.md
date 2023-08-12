@@ -16,6 +16,6 @@ nmap -sT ...
 
 *Thâm chí có thể config tưởng lửa để response bằng RST, ví dụ:
   
-    / iptables -I INPUT -p tcp --dport <port> -j REJECT --reject-with tcp-reset
+    iptables -I INPUT -p tcp --dport <port> -j REJECT --reject-with tcp-reset
 
 Điều này khiến việc quét mục tiêu trở nên khó khăn hơn
