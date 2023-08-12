@@ -10,4 +10,8 @@
 ----------------------
 
 # Xmas: nmap -sX ...
-* Xmas sẽ gửi gói tin TCP "dị dạng" (malformed) và nhận RST nếu port đóng
+* Xmas sẽ gửi gói tin TCP "dị dạng" (malformed) và nhận RST nếu port đóng (sử dụng các flag PSH, URG, FIN)
+
+----------------------
+
+### Mục đích ra đời của 3 cái trên nhằm vượt tưởng lửa, điều mà những cái trước không thể làm được, nhưng đương nhiên không gì là tất cả
