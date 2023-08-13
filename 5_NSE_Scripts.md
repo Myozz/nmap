@@ -45,15 +45,12 @@
 
 #Installing new scripts
 * Nmap website gồm một danh sách các scripts, ta có thể cập nhật các scripts mới bằng lệnh
-
+  
 		sudo apt update && sudo apt install nmap
-
 Tuy nhiên, cũng có thể down scripts thủ công từ website đó 
 
 	sudo wget -O /usr/share/nmap/scripts/<script-name>.nse https://svn.nmap.org/nmap/scripts/<script-name>.nse
-
 Nếu làm như vậy, ta còn cần phải dùng thêm
 
 		namp --script-updatedb
-
 nhằm update file ```script.db``` để thêm các scripts mới tải vào list
