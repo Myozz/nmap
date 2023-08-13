@@ -21,3 +21,13 @@
 (Các đối số được ngăn cách bởi dấu phẩy)
 
 * Nmap scripts cũng có help menu, sử dụng bằng ```nmap --script-help <scr-name>.
+
+----------------------
+
+# Search Scripts
+* Có 2 option cho việc này. Thứ nhất là website nmap.org, website này chứa danh sách tất cả các scripts chính thức (official). Thứ 2 là trong máy của bạn (attacking machine), nmap sẽ đặt chung ở ```/usr/share/nmap/scripts```. Mặc định tất cả NSE scripts đều có ở đấy, đây cũng là nơi mà nmap lấy script khi ta dùng lệnh.
+* Có 2 cách để search những scripts được tải xuống. Một là mở file ```/usr/share/nmap/scripts/scripts.db```. Dù vậy, đây không thực sự là một database mà chỉ là một file văn bản chứa filename và category của từng scripts đang có
+![image](https://github.com/Myozz/nmap/assets/94811005/1ce4fb96-1ed5-4727-aa7b-90228d043c36)
+
+* Nmap sử dụng file này nhằm theo dõi và sử dụng scripts. Tuy nhiên, ta cũng có thể ```grep``` để tìm scripts,
+* 		grep "ftp" /usr/share/nmap/scripts/scripts.db
