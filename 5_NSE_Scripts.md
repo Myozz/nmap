@@ -49,7 +49,7 @@
 		sudo apt update && sudo apt install nmap
 * Tuy nhiên, cũng có thể down scripts thủ công từ website đó 
 
-	sudo wget -O /usr/share/nmap/scripts/<script-name>.nse https://svn.nmap.org/nmap/scripts/<script-name>.nse
+		sudo wget -O /usr/share/nmap/scripts/<script-name>.nse https://svn.nmap.org/nmap/scripts/<script-name>.nse
 * Nếu làm như vậy, ta còn cần phải dùng thêm
 
 		namp --script-updatedb
