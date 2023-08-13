@@ -38,5 +38,6 @@
 
 		ls -l /usr/share/nmap/scripts/*flip*
 ![image](https://github.com/Myozz/nmap/assets/94811005/ecb1b697-6eef-4db4-b892-9c8f499cece4)
-Sử dụng ```*``` hai bên để search
+
+**Sử dụng ```*``` hai bên để search**
 
