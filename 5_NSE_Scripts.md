@@ -29,7 +29,7 @@
 * Có 2 cách để search những scripts được tải xuống. Một là mở file ```/usr/share/nmap/scripts/scripts.db```. Dù vậy, đây không thực sự là một database mà chỉ là một file văn bản chứa filename và category của từng scripts đang có
 ![image](https://github.com/Myozz/nmap/assets/94811005/1ce4fb96-1ed5-4727-aa7b-90228d043c36)
 
-* Nmap sử dụng file này nhằm theo dõi và sử dụng scripts. Tuy nhiên, ta cũng có thể ```grep``` để tìm scripts, VD:
+* Nmap sử dụng file này nhằm theo dõi và sử dụng scripts. Tuy nhiên, ta cũng có thể ```grep``` để tìm scripts hoặc categories, VD:
   
 		grep "ftp" /usr/share/nmap/scripts/scripts.db
 ![image](https://github.com/Myozz/nmap/assets/94811005/70fbb547-79ef-41db-b959-505d12f2b2b1)
@@ -41,3 +41,19 @@
 
 **Sử dụng ```*``` hai bên để search**
 
+-----------------------
+
+#Installing new scripts
+* Nmap website gồm một danh sách các scripts, ta có thể cập nhật các scripts mới bằng lệnh
+
+		sudo apt update && sudo apt install nmap
+
+Tuy nhiên, cũng có thể down scripts thủ công từ website đó 
+
+	sudo wget -O /usr/share/nmap/scripts/<script-name>.nse https://svn.nmap.org/nmap/scripts/<script-name>.nse
+
+Nếu làm như vậy, ta còn cần phải dùng thêm
+
+		namp --script-updatedb
+
+nhằm update file ```script.db``` để thêm các scripts mới tải vào list
